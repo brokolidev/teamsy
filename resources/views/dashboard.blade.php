@@ -8,6 +8,8 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <p>{{ App\Models\User::count() }}</p>
+                <p>{{ App\Models\User::where('tenant_id', 1)->count() }}</p>
                 <x-jet-welcome />
             </div>
         </div>

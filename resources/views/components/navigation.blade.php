@@ -29,7 +29,7 @@
 
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
 
-                <a href="/login" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+                <a href="/login" class="font-medium text-indigo-600 hover:text-indigo-500">로그인</a>
             </div>
         </nav>
     </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div role="none">
                     <a href="/login" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100" role="menuitem">
-                        Log in
+                        로그인
                     </a>
                 </div>
             </div>

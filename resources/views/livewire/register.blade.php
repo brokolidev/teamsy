@@ -30,28 +30,33 @@
                     </a>
                 </p>
             </div>
+            {{ $errors }}
             <form class="mt-8 space-y-6" wire:submit.prevent="register">
                 <div>
                     <label for="name">이름</label>
                     <input id="name" name="name" type="text" required
+                           wire:model="name"
                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                            placeholder="이름을 입력해주세요">
                 </div>
                 <div>
                     <label for="company-name">회사명</label>
                     <input id="company-name" name="companyName" type="text" required
+                           wire:model="companyName"
                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                            placeholder="회사명을 입력해주세요">
                 </div>
                 <div>
                     <label for="email">이메일</label>
                     <input id="email" name="email" type="email" required
+                           wire:model="email"
                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                            placeholder="이메일 주소를 입력해주세요">
                 </div>
                 <div>
                     <label for="password">비밀번호</label>
                     <input id="password" name="password" type="password" required
+                           wire:model="password"
                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                            placeholder="비밀번호를 입력해주세요">
                 </div>

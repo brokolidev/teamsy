@@ -3,6 +3,9 @@
 namespace App\Http\Livewire;
 
 use App\Models\Tenant;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 
 class Register extends Component
@@ -14,7 +17,6 @@ class Register extends Component
 
     public function register()
     {
-        dd('here');
         $this->validate([
             'name' => ['required', 'string'],
             'companyName' => ['required', 'string', 'unique:tenants,name'],
@@ -34,7 +36,7 @@ class Register extends Component
             'tenant_id' => $tenant->id,
         ]);
 
-        $user->sendEmailVerificationNotification();
+//        $user->sendEmailVerificationNotification();
 
         Auth::login($user, true);
 

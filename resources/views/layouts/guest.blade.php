@@ -14,6 +14,7 @@
         <style>
             [x-cloak] { display: none; }
         </style>
+        @livewireStyles
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Scripts -->
@@ -23,5 +24,6 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        @livewireScripts
     </body>
 </html>
